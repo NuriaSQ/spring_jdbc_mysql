@@ -1,8 +1,10 @@
 Afegir alumnes:
-curl -X POST http://localhost:8080/api/customer/addUsers
+curl -X POST http://localhost:8080/api/customer ^
+-H "Content-Type: application/json" ^
+-d "{\"name\":\"Pikachu\",\"description\":\"\",\"course\":\"ASIX1\",\"age\":5,\"password\":\"pikachu123\"}"
 
 Mostrar els alumnes:
-curl -X GET http://localhost:8080/api/customer/showUsers
+curl -X GET http://localhost:8080/api/customer
 
 Mostrar alumne mintjançant el ID:
 curl -X GET http://localhost:8080/api/customer/2
@@ -10,19 +12,17 @@ curl -X GET http://localhost:8080/api/customer/2
 Actualitzar dades d'un alumne per ID:
 curl -X PUT "http://localhost:8080/api/customer/1" ^
 -H "Content-Type: application/json" ^
--d "{\"name\":\"Commander Shepard\",\"description\":\"prova\",\"course\":\"DAM1\",\"age\":29}"
+-d "{\"name\":\"Commander Shepard\",\"description\":\"prova\",\"course\":\"DAM1\",\"age\":29,\"password\":\"shepard123\"}"
 
 Actualitzar dades parcialment d'un alumne per ID:
-curl -X PATCH "http://localhost:8080/api/customer/2" ^
--H "Content-Type: application/json" ^
--d "{\"name\":\"Mario Bros\",\"age\":51}"
+curl -X PATCH "http://localhost:8080/api/customer/2/age?age=51"
 
 Eliminar alumne per id:
 curl -X DELETE http://localhost:8080/api/customer/2
 
 
 Per mostrar el JSON al navegador:
-http://localhost:8080/api/customer/showUsers
+http://localhost:8080/api/customer
 
 http://localhost:8080/api/customer/1
 

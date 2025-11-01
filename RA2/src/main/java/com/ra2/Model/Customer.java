@@ -7,6 +7,7 @@ public class Customer {
     private String name;
     private String description;
     private String course;
+    private String password;
     private int age;
     private Timestamp dataCreated;
     private Timestamp dataUpdated;
@@ -15,80 +16,85 @@ public class Customer {
     	
     }
 
-    public Customer(long id, String name, String description, String course, int age, Timestamp dataCreated, Timestamp dataUpdated) {
+    public Customer(long id, String name, String description, String course, String password, int age, Timestamp dataCreated, Timestamp dataUpdated) {
         this.id = id;
         this.name = name;
         this.description = description;
         this.course = course;
+        this.password = password;
         this.age = age;
         this.dataCreated = dataCreated;
         this.dataUpdated = dataUpdated;
     }
 
-    public long getId() {
-        return id;
-    }
+	public long getId() {
+		return id;
+	}
 
-    public void setId(long id) {
-        this.id = id;
-    }
+	public void setId(long id) {
+		this.id = id;
+	}
 
-    public String getName() {
-        return name;
-    }
+	public String getName() {
+		return name;
+	}
 
-    public void setName(String name) {
-        this.name = name;
-    }
+	public void setName(String name) {
+		this.name = name;
+	}
 
-    public String getDescription() {
-        return description;
-    }
+	public String getDescription() {
+		return description;
+	}
 
-    public void setDescription(String description) {
-        this.description = description;
-    }
+	public void setDescription(String description) {
+		this.description = description;
+	}
 
-    public String getCourse() {
-        return course;
-    }
+	public String getCourse() {
+		return course;
+	}
 
-    public void setCourse(String course) {
-        this.course = course;
-    }
+	public void setCourse(String course) {
+		this.course = course;
+	}
 
-    public int getAge() {
-        return age;
-    }
+	public String getPassword() {
+		return password;
+	}
 
-    public void setAge(int age) {
-        this.age = age;
-    }
+	public void setPassword(String password) {
+		this.password = password;
+	}
 
-    public Timestamp getDataCreated() {
-        return dataCreated;
-    }
+	public int getAge() {
+		return age;
+	}
 
-    public void setDataCreated(Timestamp dataCreated) {
-        this.dataCreated = dataCreated;
-    }
+	public void setAge(int age) {
+		this.age = age;
+	}
 
-    public Timestamp getDataUpdated() {
-        return dataUpdated;
-    }
+	public Timestamp getDataCreated() {
+		return dataCreated;
+	}
 
-    public void setDataUpdated(Timestamp dataUpdated) {
-        this.dataUpdated = dataUpdated;
-    }
+	public void setDataCreated(Timestamp dataCreated) {
+		this.dataCreated = dataCreated;
+	}
 
-    @Override
-    public String toString() {
-        return "Customer [id=" + id +
-               ", name=" + name +
-               ", description=" + description +
-               ", course=" + course +
-               ", age=" + age +
-               ", dataCreated=" + dataCreated +
-               ", dataUpdated=" + dataUpdated + "]";
-    }
+	public Timestamp getDataUpdated() {
+		return dataUpdated;
+	}
+
+	public void setDataUpdated(Timestamp dataUpdated) {
+		this.dataUpdated = dataUpdated;
+	}
+
+	@Override
+	public String toString() {
+		return "Customer [id=" + id + ", name=" + name + ", description=" + description + ", course=" + course
+				+ ", password=" + password + ", age=" + age + ", dataCreated=" + dataCreated + ", dataUpdated="
+				+ dataUpdated + "]";
+	}
 }
