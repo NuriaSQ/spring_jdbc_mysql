@@ -1,0 +1,32 @@
+{
+  "data": {
+    "count": 3,
+    "control": "OK",
+    "users": [
+      {
+        "name": "Kevin",
+        "description": "Estudiante DAM1",
+        "email": "kevin@example.com",
+        "password": "kevin123",
+        "age": 20,
+        "course": "DAM1"
+      },
+      {
+        "name": "Laura",
+        "description": "Estudiante DAW2",
+        "email": "laura@example.com",
+        "password": "laura456",
+        "age": 22,
+        "course": "DAW2"
+      },
+      {
+        "name": "Martin",
+        "description": "Alumno ASIX1",
+        "email": "martin@example.com",
+        "password": "martin789",
+        "age": 21,
+        "course": "ASIX1"
+      }
+    ]
+  }
+}

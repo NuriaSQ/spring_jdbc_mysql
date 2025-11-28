@@ -1,0 +1,11 @@
+"name,description,course,age,password
+Alice,Estudiante de DAM,DAM1,20,pass123
+Bob,Estudiante de DAW,DAW2,22,abc123
+Charlie,Alumno ASIX,ASIX1,21,xyz123
+Diana,Alumno DAM,DAM2,23,qwe456
+Ethan,Alumno DAW,DAW1,24,zxc789
+Fiona,Alumno ASIX,ASIX2,25,asd234
+George,Alumno DAM,DAM1,26,fgd567
+Hannah,Alumno DAW,DAW2,27,hjk890
+Ivan,Alumno ASIX,ASIX1,28,lmn123
+Julia,Alumno DAM,DAM2,29,pqr456"

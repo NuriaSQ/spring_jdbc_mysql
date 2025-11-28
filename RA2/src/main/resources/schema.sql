@@ -8,7 +8,8 @@ CREATE TABLE customers (
     age INT NOT NULL CHECK (age > 0),
     password VARCHAR(255) NOT NULL DEFAULT '1234',
     dataCreated TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    dataUpdated TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    dataUpdated TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    image_path VARCHAR(500) NULL
 );
 
 INSERT INTO customers (name, description, course, age, password, dataCreated, dataUpdated)VALUES ('John Doe', ' ', 'DAM2', 25, '1234', '2023-03-15 10:30:00', '2023-03-15 10:30:00');

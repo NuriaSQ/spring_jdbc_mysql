@@ -26,3 +26,17 @@ http://localhost:8080/api/customer
 
 http://localhost:8080/api/customer/1
 
+Per pujar imatges dels alumnes:
+curl -X POST -F "imageFile=@C:/Users/Nuria/Desktop/Fotos_Alumnes/Gengar.jpg" http://localhost:8080/api/customer/1/image
+curl -X POST -F "imageFile=@C:/Users/Nuria/Desktop/Fotos_Alumnes/Luigi.jpg" http://localhost:8080/api/customer/2/image
+curl -X POST -F "imageFile=@C:/Users/Nuria/Desktop/Fotos_Alumnes/Ditto.jpg" http://localhost:8080/api/customer/3/image
+
+Inserir 10 alumnes amb .csv:
+curl -X POST -F "csvFile=@C:/Users/Nuria/Desktop/10alumnes.csv" http://localhost:8080/api/customer/upload-csv
+
+Inserir 3 alumnes amb .json:
+curl -X POST -F "jsonFile=@C:/Users/Nuria/Desktop/3alumnes.json" http://localhost:8080/api/customer/upload-json
+
+
+
+
