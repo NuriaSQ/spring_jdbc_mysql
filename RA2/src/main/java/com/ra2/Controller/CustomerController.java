@@ -1,7 +1,6 @@
 package com.ra2.Controller;
 
 import com.ra2.Model.Customer;
-import com.ra2.Repository.CustomerRepository;
 import com.ra2.Services.CustomerServices;
 
 import java.util.List;
@@ -33,7 +32,7 @@ public class CustomerController {
         
         // Insertar un alumne nou utilitzant RequestBody
         customerServices.insertCustomer(customer);
-        String msg = "S'han creat correctament els 10 alumnes i l'alumne "+ customer.getName() + ".";
+        String msg = "S'ha creat l'alumne "+ customer.getName() + ".";
         return ResponseEntity.status(HttpStatus.CREATED).body(msg);
     }
 

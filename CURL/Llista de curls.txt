@@ -37,6 +37,41 @@ curl -X POST -F "csvFile=@C:/Users/Nuria/Desktop/10alumnes.csv" http://localhost
 Inserir 3 alumnes amb .json:
 curl -X POST -F "jsonFile=@C:/Users/Nuria/Desktop/3alumnes.json" http://localhost:8080/api/customer/upload-json
 
+Swagger:
+
+Exemple per update:
+
+{
+  "id": 2,
+  "name": "Joan",
+  "description": "Estudiant de prova",
+  "course": "Matemàtiques",
+  "password": "12345",
+  "age": 25,
+  "dataCreated": "2025-12-08T15:20:47.711Z",
+  "dataUpdated": "2025-12-08T15:20:47.711Z",
+  "imagePath": "string"
+}
+
+
+Exemple post 1 estudiant:
+
+{
+  "name": "Garrus Vakarian",
+  "description": "Turian expert en calibració i tir de precisió",
+  "course": "Enginyeria Tàctica",
+  "password": "turian123",
+  "age": 30,
+  "dataCreated": "2025-12-08T15:25:07.079Z",
+  "dataUpdated": "2025-12-08T15:25:07.079Z",
+  "imagePath": "string"
+}
+
+SWAGGER:
+
+http://localhost:8080/swagger-ui/index.html
+
+
 
 
 

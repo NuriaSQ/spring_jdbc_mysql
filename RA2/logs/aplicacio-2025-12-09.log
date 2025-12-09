@@ -1,0 +1,13 @@
+[INFO] 2025-12-09 16:19.10 - Class: CustomerServices - Method: findById - Message: Consultant l'estudiant amb id: 1
+[INFO] 2025-12-09 16:19.27 - Class: CustomerServices - Method: findAll - Message: Consultant tots els estudiants
+[INFO] 2025-12-09 16:20.17 - Class: CustomerServices - Method: updateCustomer - Message: Modificant l'estudiant amb id: 2
+[INFO] 2025-12-09 16:20.17 - Class: CustomerServices - Method: updateCustomer - Message: Estudiant modificat correctament
+[INFO] 2025-12-09 16:20.22 - Class: CustomerServices - Method: findAll - Message: Consultant tots els estudiants
+[INFO] 2025-12-09 16:20.41 - Class: CustomerServices - Method: deleteCustomer - Message: Borrant l'estudiant amb id: 1
+[INFO] 2025-12-09 16:20.41 - Class: CustomerServices - Method: deleteCustomer - Message: L'estudiant amb id: 1 s'ha borrat correctament
+[INFO] 2025-12-09 16:20.49 - Class: CustomerServices - Method: findAll - Message: Consultant tots els estudiants
+[INFO] 2025-12-09 16:21.02 - Class: CustomerServices - Method: findAll - Message: Consultant tots els estudiants
+[INFO] 2025-12-09 16:21.05 - Class: CustomerServices - Method: findAll - Message: Consultant tots els estudiants
+[INFO] 2025-12-09 16:22.04 - Class: CustomerServices - Method: findAll - Message: Consultant tots els estudiants
+[INFO] 2025-12-09 16:22.12 - Class: CustomerServices - Method: findById - Message: Consultant l'estudiant amb id: 1111
+[ERROR] 2025-12-09 16:22.12 - Class: CustomerServices - Method: findById - Message: L'estudiant amb id: 1111 no existeix - Exception: Incorrect result size: expected 1, actual 0
